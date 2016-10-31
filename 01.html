@@ -1,0 +1,26 @@
+﻿<!--绘制矩形与圆形-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="canvas" width="1000" height="1200">
+		Canvas is not supported
+	</canvas>
+</body>
+<script type="text/javascript">
+	var can = document.getElementById("canvas");
+	var context = can.getContext('2d');
+	context.fillStyle = "#f1f2f3";
+	context.strokeStyle = "#fff";
+	context.lineWidth = 10;
+	//context.fillStyle = "#f1f2f3";
+	context.fillRect(0,0,600,300);
+	context.strokeRect(150,60,150,220);
+	context.strokeRect(170,30,110,200);
+	context.arc(120,110,25,0,Math.PI*2,false);
+	context.fillStyle = "rgba(255,0,0,0.25)";
+	context.fill();
+</script>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{background: #dddddd;}
+	#canvas{
+		position: relative;
+		left: 0;
+		top: 20px;
+		margin: 20px;
+		background: #ffffff;
+		border: thin inset rgba(100,150,230,0.5);
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+	<div id="readout"></div>
+	<canvas id="canvas" width="1000" height="1200">
+		Canvas is not supported
+	</canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById("canvas"),
+		context = canvas.getContext("2d");
+	context.beginPath();
+	context.moveTo(0,25);
+	context.lineTo(canvas.width,85);
+	context.stroke();
+</script>
+</html>
